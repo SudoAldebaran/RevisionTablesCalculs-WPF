@@ -23,23 +23,22 @@ namespace WpfApp1
         {
             InitializeComponent();
             // Code à compléter
-            
+            for (int i = 1; i <= 10; i++)
+            {
+                this.lstTables.Items.Add(i);
+            }
+
         }
 
         private void lstTables_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             this.txtTable.Text = "";
-            //string table = (string)this.lstTables.SelectedItem.ToString();
 
-            string table = (lstTables.SelectedItem as ListBoxItem)?.Content?.ToString();
-
-            int tableS = Convert.ToInt32(table);
-
-
+            int table = (int)this.lstTables.SelectedItem;
 
             for(int i = 1; i <= 10; i++)
             {
-                this.txtTable.Text += $"{table} × {i} = {tableS * i}\r\n";
+                this.txtTable.Text += $"{table} × {i} = {table * i}\r\n";
             }
 
 

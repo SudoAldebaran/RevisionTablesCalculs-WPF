@@ -10,15 +10,7 @@
         <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
             <TextBlock Text="Choisir la table" Height="15" Margin="0,20,0,0" VerticalAlignment="Top"  />
             <ListBox x:Name="lstTables" Margin="0,50,0,0" Width="50" Height="100" VerticalAlignment="Top" MouseDoubleClick="lstTables_MouseDoubleClick">
-                <ListBoxItem Content="1" Name="table1"/>
-                <ListBoxItem Content="2" Name="table2"/>
-                <ListBoxItem Content="3" Name="table3"/>
-                <ListBoxItem Content="4" Name="table4"/>
-                <ListBoxItem Content="5" Name="table5"/>
-                <ListBoxItem Content="6" Name="table6"/>
-                <ListBoxItem Content="7" Name="table7"/>
-                <ListBoxItem Content="8" Name="table8"/>
-                <ListBoxItem Content="9" Name="table9"/>
+                
             </ListBox>
             <TextBox x:Name="txtTable" VerticalAlignment="Top" Width="150" Height="200" Margin="100,100,0,0"/>
         </StackPanel>
