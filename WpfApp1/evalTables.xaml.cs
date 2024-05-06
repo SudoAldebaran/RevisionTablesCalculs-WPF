@@ -45,10 +45,12 @@ namespace WpfApp1
             this.NumQuestion++;
             if (this.NumQuestion <= 5)
             {
-                int  nbAlea;
+                Random rand = new Random();
+                int nbAlea = rand.Next(1, 9);
                 this.NumEssai = 1;
                 this.txtReponse.Focus();
                 //code pour faire apparaitre la question et calculer le bon résultat
+                this.tBkContent.Text = $"{nbAlea} x {this.table}";
                 
             }
             else
@@ -60,7 +62,7 @@ namespace WpfApp1
         private void btnCommencer_Click(object sender, RoutedEventArgs e)
         {
             this.btnCommencer.IsEnabled = false;
-            table = Convert.ToInt32(lstTable.SelectedValue);
+            this.table = Convert.ToInt32(lstTable.SelectedValue);
             this.lstTable.IsEnabled = false;
             InitQuestion();
         }
