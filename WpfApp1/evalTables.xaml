@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp1.evalTables"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Evaluations" Height="450" Width="600">
+    <Grid>
+        <StackPanel>
+            <TextBlock x:Name="tBbkPresentation" HorizontalAlignment="Center" Background="#FFECECC8"/>
+            <TextBlock Text="table à sélectionner" Margin="0,50,0,0"/>
+            <StackPanel Orientation="Horizontal">
+                <ListBox x:Name="lstTable" HorizontalAlignment="Left" Width="50" Height="100" Margin="30,20,0,0">
+                    
+                </ListBox>
+            <Button x:Name="btnCommencer" Content="Commencer"  Margin="100,0,0,0" Width="100" Height="30" Click="btnCommencer_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="tBkContent"  Margin="30,20,0,0" Width="100" Height="30"/>
+                <TextBox x:Name="txtReponse" Margin="80,20,0,0" Width="50" Height="20" KeyDown="txtReponse_KeyDown"/>
+                <TextBlock x:Name="tBkQuestion" Text="" Margin="120,20,0,0" Width="80" Height="20"/>
+            </StackPanel>
+            <TextBlock x:Name="tBxNbPoints" Margin="50,20,0,0" Width="150" Height="20" HorizontalAlignment="Left" Foreground="#FFEA5C32"/>
+        </StackPanel>
+    </Grid>
+</Window>
